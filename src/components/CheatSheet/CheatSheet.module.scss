@@ -1,0 +1,25 @@
+.root {
+  background-color: #323232;
+  
+  border-radius: 12px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  
+  overflow: hidden;
+}
+.header {
+  height: 50px;
+
+  border-bottom: 1px solid #232323;
+  
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 18px;
+    margin-left: 1em;
+  }
+}
+.content {
+  background-color: #505050;
+  padding: 15px;
+}

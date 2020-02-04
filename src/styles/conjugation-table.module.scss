@@ -1,0 +1,16 @@
+.tableWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.conjugationTable {
+  width: 150px;
+  margin: 10px;
+  
+  th {
+    border-bottom: 2px solid #dee2e6;
+  }
+  td:hover {
+    background-color: #232323;
+  }
+}
