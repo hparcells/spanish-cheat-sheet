@@ -6,12 +6,14 @@ import ConjugationPresent from '../../cheatsheets/ConjugationPresent';
 import ConjugationFuture from '../../cheatsheets/ConjugationFuture';
 import ConjugationPresentProgressive from '../../cheatsheets/ConjugationPresentProgressive';
 import ConjugationPreterite from '../../cheatsheets/ConjugationPreterite';
+import ConjugationImperfect from '../../cheatsheets/ConjugationImperfect';
 
 const cheatSheets = [
   ConjugationPresent,
   ConjugationFuture,
   ConjugationPresentProgressive,
-  ConjugationPreterite
+  ConjugationPreterite,
+  ConjugationImperfect
 ];
 
 function App() {
@@ -27,7 +29,10 @@ function App() {
         Warning! This site is a huge work in progress, so a lot of things may be misspelled, incorrect, or missing.
       </div>
 
-      <h1>Cheat Sheets</h1>
+      <div style={{ marginBottom: '2em' }}>
+        <h1>Cheat Sheets</h1>
+        <p>Click the header of any of the cheat sheets to expand/collapse it.</p>
+      </div>
 
       {
         cheatSheets.map((CheatSheet, index) => {
