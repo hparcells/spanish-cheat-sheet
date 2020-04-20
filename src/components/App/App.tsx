@@ -7,13 +7,21 @@ import ConjugationFuture from '../../cheatsheets/ConjugationFuture';
 import ConjugationPresentProgressive from '../../cheatsheets/ConjugationPresentProgressive';
 import ConjugationPreterite from '../../cheatsheets/ConjugationPreterite';
 import ConjugationImperfect from '../../cheatsheets/ConjugationImperfect';
+import SerEstar from '../../cheatsheets/SerEstar';
+import SaberConocer from '../../cheatsheets/SaberConocer';
+import PreteriteIrregulars from '../../cheatsheets/PreteriteIrregulars';
+import PreteriteIrregularStems from '../../cheatsheets/PreteriteIrregularStems';
 
 const cheatSheets = [
   ConjugationPresent,
   ConjugationFuture,
   ConjugationPresentProgressive,
   ConjugationPreterite,
-  ConjugationImperfect
+  ConjugationImperfect,
+  SerEstar,
+  SaberConocer,
+  PreteriteIrregulars,
+  PreteriteIrregularStems
 ];
 
 function App() {
@@ -26,7 +34,10 @@ function App() {
           border: '5px dashed #640000'
         }}
       >
-        Warning! This site is a huge work in progress, so a lot of things may be misspelled, incorrect, or missing.
+        <p>Warning! This site is a huge work in progress, so a lot of things may be misspelled, incorrect, or missing.</p>
+        <small>If you found a mistake or would like to contribute, feel free to open and issue or pull request at{' '}
+          <a href='https://github.com/hparcells/spanish-cheat-sheet/' style={{ color: 'white' }}>https://github.com/hparcells/spanish-cheat-sheet/</a>.
+        </small>
       </div>
 
       <div style={{ marginBottom: '2em' }}>
