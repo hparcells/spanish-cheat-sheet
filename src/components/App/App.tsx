@@ -34,26 +34,37 @@ function App() {
           border: '5px dashed #640000'
         }}
       >
-        <p>Warning! This site is a huge work in progress, so a lot of things may be misspelled, incorrect, or missing.</p>
-        <small>If you found a mistake or would like to contribute, feel free to open and issue or pull request at{' '}
-          <a href='https://github.com/hparcells/spanish-cheat-sheet/' style={{ color: 'white' }}>https://github.com/hparcells/spanish-cheat-sheet/</a>.
+        <p>
+          Warning! This site is a huge work in progress, so a lot of things may
+          be misspelled, incorrect, or missing.
+        </p>
+        <small>
+          If you found a mistake or would like to contribute, feel free to open
+          and issue or pull request at{' '}
+          <a
+            href='https://github.com/hparcells/spanish-cheat-sheet/'
+            style={{ color: 'white' }}
+          >
+            https://github.com/hparcells/spanish-cheat-sheet/
+          </a>
+          .
         </small>
       </div>
 
       <div style={{ marginBottom: '2em' }}>
         <h1>Cheat Sheets</h1>
-        <p>Click the header of any of the cheat sheets to expand/collapse it.</p>
+        <p>
+          Click the header of any of the cheat sheets to expand/collapse it.
+        </p>
       </div>
 
-      {
-        cheatSheets.map((CheatSheet, index) => {
-          return (
-            <div key={index} style={{ marginBottom: '20px' }}>
-              <CheatSheet />
-            </div>
-          );
-        })
-      }
+      {cheatSheets.map((CheatSheet, index) => {
+        return (
+          <div key={index} style={{ marginBottom: '20px' }}>
+            <CheatSheet />
+          </div>
+        );
+      })}
     </div>
   );
 }
