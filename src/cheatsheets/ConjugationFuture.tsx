@@ -1,8 +1,8 @@
 import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
-
-import conjugationTableClasses from '../styles/conjugation-table.module.scss';
+import ConjugationTable from '../components/ConjugationTable/ConjugationTable';
+import ConjugationTableWrapper from '../components/ConjugationTableWrapper';
 
 function ConjugationFuture() {
   return (
@@ -12,27 +12,17 @@ function ConjugationFuture() {
         conjugation endings for all verbs.
       </p>
 
-      <div className={conjugationTableClasses.tableWrapper}>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>All Verbs</th>
-            </tr>
-            <tr>
-              <td>-é</td>
-              <td>-emos</td>
-            </tr>
-            <tr>
-              <td>-ás</td>
-              <td>-éis</td>
-            </tr>
-            <tr>
-              <td>-á</td>
-              <td>-án</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ConjugationTableWrapper>
+        <ConjugationTable
+          title='All Verbs'
+          yo='-é'
+          tu='-ás'
+          ud='-á'
+          nos='-emos'
+          vos='-éis'
+          uds='-án'
+        />
+      </ConjugationTableWrapper>
 
       <p>
         To conjugate a verb to the future tense, remove the -ar, -er, or -ir ending, and replace it

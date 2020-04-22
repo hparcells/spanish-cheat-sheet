@@ -1,8 +1,8 @@
 import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
-
-import conjugationTableClasses from '../styles/conjugation-table.module.scss';
+import ConjugationTable from '../components/ConjugationTable/ConjugationTable';
+import ConjugationTableWrapper from '../components/ConjugationTableWrapper';
 
 function ConjugationPresent() {
   return (
@@ -13,65 +13,35 @@ function ConjugationPresent() {
         that end in -ar, -er, or -ir.
       </p>
 
-      <div className={conjugationTableClasses.tableWrapper}>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>-ar Verbs</th>
-            </tr>
-            <tr>
-              <td>-o</td>
-              <td>-amos</td>
-            </tr>
-            <tr>
-              <td>-as</td>
-              <td>-áis</td>
-            </tr>
-            <tr>
-              <td>-a</td>
-              <td>-an</td>
-            </tr>
-          </tbody>
-        </table>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>-er Verbs</th>
-            </tr>
-            <tr>
-              <td>-o</td>
-              <td>-emos</td>
-            </tr>
-            <tr>
-              <td>-es</td>
-              <td>-éis</td>
-            </tr>
-            <tr>
-              <td>-e</td>
-              <td>-en</td>
-            </tr>
-          </tbody>
-        </table>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>-ir Verbs</th>
-            </tr>
-            <tr>
-              <td>-o</td>
-              <td>-imos</td>
-            </tr>
-            <tr>
-              <td>-es</td>
-              <td>-ís</td>
-            </tr>
-            <tr>
-              <td>-e</td>
-              <td>-en</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ConjugationTableWrapper>
+        <ConjugationTable
+          title='-ar Verbs'
+          yo='-o'
+          tu='-as'
+          ud='-a'
+          nos='-amos'
+          vos='-áis'
+          uds='-an'
+        />
+        <ConjugationTable
+          title='-er Verbs'
+          yo='-o'
+          tu='-es'
+          ud='-e'
+          nos='-emos'
+          vos='-eis'
+          uds='-en'
+        />
+        <ConjugationTable
+          title='-ir Verbs'
+          yo='-o'
+          tu='-es'
+          ud='-e'
+          nos='-imos'
+          vos='-ís'
+          uds='-en'
+        />
+      </ConjugationTableWrapper>
 
       <p>
         To conjugate a verb to the present tense, remove the -ar, -er, or -ir ending, and replace it

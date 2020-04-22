@@ -1,8 +1,8 @@
 import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
-
-import conjugationTableClasses from '../styles/conjugation-table.module.scss';
+import ConjugationTable from '../components/ConjugationTable/ConjugationTable';
+import ConjugationTableWrapper from '../components/ConjugationTableWrapper';
 
 function PreteriteIrregulars() {
   return (

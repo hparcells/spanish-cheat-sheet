@@ -1,8 +1,9 @@
 import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
+import ConjugationTableWrapper from '../components/ConjugationTableWrapper';
 
-import conjugationTableClasses from '../styles/conjugation-table.module.scss';
+import conjugationTableClasses from '../components/ConjugationTable/ConjugationTable.module.scss';
 
 function ConjugationPresentProgressive() {
   return (
@@ -17,7 +18,7 @@ function ConjugationPresentProgressive() {
         <u>you must include a form of estar</u>.
       </p>
 
-      <div className={conjugationTableClasses.tableWrapper}>
+      <ConjugationTableWrapper>
         <table className={conjugationTableClasses.conjugationTable}>
           <tbody>
             <tr>
@@ -38,7 +39,7 @@ function ConjugationPresentProgressive() {
             </tr>
           </tbody>
         </table>
-      </div>
+      </ConjugationTableWrapper>
       <div className={conjugationTableClasses.tableWrapper}>
         <table className={conjugationTableClasses.conjugationTable}>
           <tbody>

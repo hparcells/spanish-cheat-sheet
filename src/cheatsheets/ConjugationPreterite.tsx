@@ -1,8 +1,8 @@
 import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
-
-import conjugationTableClasses from '../styles/conjugation-table.module.scss';
+import ConjugationTable from '../components/ConjugationTable/ConjugationTable';
+import ConjugationTableWrapper from '../components/ConjugationTableWrapper';
 
 function ConjugationPreterite() {
   return (
@@ -12,46 +12,26 @@ function ConjugationPreterite() {
         and has different use cases than the imperfect tense."
       </p>
 
-      <div className={conjugationTableClasses.tableWrapper}>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>-ar Verbs</th>
-            </tr>
-            <tr>
-              <td>-é</td>
-              <td>-amos</td>
-            </tr>
-            <tr>
-              <td>-aste</td>
-              <td>-asteis</td>
-            </tr>
-            <tr>
-              <td>-ó</td>
-              <td>-aron</td>
-            </tr>
-          </tbody>
-        </table>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>-er and -ir Verbs</th>
-            </tr>
-            <tr>
-              <td>-í</td>
-              <td>-imos</td>
-            </tr>
-            <tr>
-              <td>-iste</td>
-              <td>-isteis</td>
-            </tr>
-            <tr>
-              <td>-ió</td>
-              <td>-ieron</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ConjugationTableWrapper>
+        <ConjugationTable
+          title='-ar Verbs'
+          yo='-é'
+          tu='-aste'
+          ud='-ó'
+          nos='-amos'
+          vos='-asteis'
+          uds='-aron'
+        />
+        <ConjugationTable
+          title='-er and -ir Verbs'
+          yo='-í'
+          tu='-iste'
+          ud='-ió'
+          nos='-imos'
+          vos='-isteis'
+          uds='-ieron'
+        />
+      </ConjugationTableWrapper>
 
       <p>
         To conjugate a verb to the preterite, remove the -ar, -er, or -ir ending, and replace it

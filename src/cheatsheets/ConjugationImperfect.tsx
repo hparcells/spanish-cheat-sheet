@@ -1,8 +1,8 @@
 import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
-
-import conjugationTableClasses from '../styles/conjugation-table.module.scss';
+import ConjugationTable from '../components/ConjugationTable/ConjugationTable';
+import ConjugationTableWrapper from '../components/ConjugationTableWrapper';
 
 function ConjugationImperfect() {
   return (
@@ -12,46 +12,26 @@ function ConjugationImperfect() {
         specifically, things that you were doing (progressive) or something you used to do.
       </p>
 
-      <div className={conjugationTableClasses.tableWrapper}>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>-ar Verbs</th>
-            </tr>
-            <tr>
-              <td>-aba</td>
-              <td>-ábamos</td>
-            </tr>
-            <tr>
-              <td>-abas</td>
-              <td>-abais</td>
-            </tr>
-            <tr>
-              <td>-aba</td>
-              <td>-aban</td>
-            </tr>
-          </tbody>
-        </table>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>-er and -ir Verbs</th>
-            </tr>
-            <tr>
-              <td>-ía</td>
-              <td>-íamos</td>
-            </tr>
-            <tr>
-              <td>-ías</td>
-              <td>-íais</td>
-            </tr>
-            <tr>
-              <td>-ía</td>
-              <td>-ían</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ConjugationTableWrapper>
+        <ConjugationTable
+          title='-ar Verbs'
+          yo='-aba'
+          tu='-abas'
+          ud='-aba'
+          nos='-ábamos'
+          vos='-abais'
+          uds='-aban'
+        />
+        <ConjugationTable
+          title='-er and -ir Verbs'
+          yo='-ía'
+          tu='-ías'
+          ud='-ía'
+          nos='-íamos'
+          vos='-íais'
+          uds='-ían'
+        />
+      </ConjugationTableWrapper>
 
       <p>
         To conjugate a verb to the future tense, remove the -ar, -er, or -ir ending, and replace it
@@ -64,65 +44,35 @@ function ConjugationImperfect() {
       </p>
 
       <h2 style={{ textAlign: 'center' }}>Irregulars</h2>
-      <div className={conjugationTableClasses.tableWrapper}>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>ir</th>
-            </tr>
-            <tr>
-              <td>iba</td>
-              <td>íbamos</td>
-            </tr>
-            <tr>
-              <td>ibas</td>
-              <td>ibais</td>
-            </tr>
-            <tr>
-              <td>iba</td>
-              <td>iban</td>
-            </tr>
-          </tbody>
-        </table>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>ser</th>
-            </tr>
-            <tr>
-              <td>era</td>
-              <td>-éramos</td>
-            </tr>
-            <tr>
-              <td>eras</td>
-              <td>erais</td>
-            </tr>
-            <tr>
-              <td>era</td>
-              <td>eran</td>
-            </tr>
-          </tbody>
-        </table>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>ver</th>
-            </tr>
-            <tr>
-              <td>veía</td>
-              <td>veíamos</td>
-            </tr>
-            <tr>
-              <td>veías</td>
-              <td>veíais</td>
-            </tr>
-            <tr>
-              <td>veía</td>
-              <td>veían</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ConjugationTableWrapper>
+        <ConjugationTable
+          title='ir'
+          yo='iba'
+          tu='ibas'
+          ud='iba'
+          nos='íbamos'
+          vos='ibais'
+          uds='iban'
+        />
+        <ConjugationTable
+          title='ser'
+          yo='era'
+          tu='eras'
+          ud='era'
+          nos='éramos'
+          vos='erais'
+          uds='eran'
+        />
+        <ConjugationTable
+          title='ver'
+          yo='veía'
+          tu='veías'
+          ud='veía'
+          nos='veíamos'
+          vos='veíais'
+          uds='veían'
+        />
+      </ConjugationTableWrapper>
     </CheatSheet>
   );
 }
