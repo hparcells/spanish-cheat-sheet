@@ -1,6 +1,7 @@
 import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
+import ConjugationTable from '../components/ConjugationTable/ConjugationTable';
 import ConjugationTableWrapper from '../components/ConjugationTableWrapper';
 
 import conjugationTableClasses from '../components/ConjugationTable/ConjugationTable.module.scss';
@@ -40,27 +41,17 @@ function ConjugationPresentProgressive() {
           </tbody>
         </table>
       </ConjugationTableWrapper>
-      <div className={conjugationTableClasses.tableWrapper}>
-        <table className={conjugationTableClasses.conjugationTable}>
-          <tbody>
-            <tr>
-              <th colSpan={2}>Estar</th>
-            </tr>
-            <tr>
-              <td>estoy</td>
-              <td>estamos</td>
-            </tr>
-            <tr>
-              <td>estás</td>
-              <td>estáis</td>
-            </tr>
-            <tr>
-              <td>está</td>
-              <td>están</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <ConjugationTableWrapper>
+        <ConjugationTable
+          title='Estar'
+          yo='estoy'
+          tu='estás'
+          ud='está'
+          nos='estamos'
+          vos='estáis'
+          uds='están'
+        />
+      </ConjugationTableWrapper>
 
       <p>
         To conjugate a verb to the future tense, remove the -ar, -er, or -ir ending, and replace it

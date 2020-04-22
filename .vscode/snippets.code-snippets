@@ -1,0 +1,10 @@
+{
+	"Conjugation Table": {
+		"scope": "typescriptreact",
+		"prefix": "conjugation-table",
+		"body": [
+			"<ConjugationTable title='$1' yo='$2' tu='$3' ud='$4' nos='$5' vos='$6' uds='$7' />$8"
+		],
+		"description": "Create a new conjugation table."
+	}
+}
