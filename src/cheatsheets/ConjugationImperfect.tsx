@@ -9,7 +9,9 @@ function ConjugationImperfect() {
     <CheatSheet title='Conjugation: Imperfect'>
       <p>
         Similar to the preterite, the imperfect is used to describe things that had happened. More
-        specifically, things that you were doing (progressive) or something you used to do.
+        specifically, <u>things that you were doing (progressive)</u>,{' '}
+        <u>something you used to do</u>, <u>time/age in the past</u>,{' '}
+        <u>description/scene setting</u>, or <u>physical and emotional state in the past</u>.
       </p>
 
       <ConjugationTableWrapper>

@@ -61,7 +61,6 @@ function ConjugationPreterite() {
         Infinitives <u>ending in -zar</u> will have their <u>"z" changed to "c"</u> when conjugated{' '}
         <u>in the first person singular form</u>.
       </p>
-      <p>asd</p>
     </CheatSheet>
   );
 }
