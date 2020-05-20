@@ -9,7 +9,8 @@ function ConjugationPreterite() {
     <CheatSheet title='Conjugation: Preterite'>
       <p>
         The preterite is used to describe what you previously did like, "I sang," or "I listened,""
-        and has different use cases than the imperfect tense."
+        and is used when an <u>action</u> verb is conjugated, and does not match any of the use
+        cases listed for the imperfect.
       </p>
 
       <ConjugationTableWrapper>
