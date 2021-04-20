@@ -7,10 +7,14 @@ import ConjugationFuture from '../../cheatsheets/ConjugationFuture';
 import ConjugationPresentProgressive from '../../cheatsheets/ConjugationPresentProgressive';
 import ConjugationPreterite from '../../cheatsheets/ConjugationPreterite';
 import ConjugationImperfect from '../../cheatsheets/ConjugationImperfect';
-import SerEstar from '../../cheatsheets/SerEstar';
-import SaberConocer from '../../cheatsheets/SaberConocer';
 import PreteriteIrregulars from '../../cheatsheets/PreteriteIrregulars';
 import PreteriteIrregularStems from '../../cheatsheets/PreteriteIrregularStems';
+import Possessive from '../../cheatsheets/Possessive';
+import SerEstar from '../../cheatsheets/SerEstar';
+import SaberConocer from '../../cheatsheets/SaberConocer';
+import PorPara from '../../cheatsheets/PorPara';
+import DirectObjectPronouns from '../../cheatsheets/DirectObjectPronouns';
+import IndirectObjectPronouns from '../../cheatsheets/IndirectObjectPronouns';
 
 const cheatSheets = [
   ConjugationPresent,
@@ -18,10 +22,14 @@ const cheatSheets = [
   ConjugationPresentProgressive,
   ConjugationPreterite,
   ConjugationImperfect,
+  PreteriteIrregulars,
+  PreteriteIrregularStems,
+  Possessive,
   SerEstar,
   SaberConocer,
-  PreteriteIrregulars,
-  PreteriteIrregularStems
+  PorPara,
+  DirectObjectPronouns,
+  IndirectObjectPronouns
 ];
 
 function App() {
