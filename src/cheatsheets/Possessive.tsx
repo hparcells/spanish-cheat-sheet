@@ -5,7 +5,7 @@ import CheatSheet from '../components/CheatSheet/CheatSheet';
 function Possessive() {
   return (
     <CheatSheet title='Possessive'>
-      <p>Soon™️</p>
+      <p>Coming soon.</p>
     </CheatSheet>
   );
 }

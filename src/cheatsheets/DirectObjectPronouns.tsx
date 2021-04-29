@@ -5,7 +5,7 @@ import CheatSheet from '../components/CheatSheet/CheatSheet';
 function DirectObjectPronouns() {
   return (
     <CheatSheet title='Direct Object Pronouns'>
-      <p>Soon™️</p>
+      <p>Coming soon.</p>
     </CheatSheet>
   );
 }

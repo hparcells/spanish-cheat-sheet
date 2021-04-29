@@ -5,7 +5,7 @@ import CheatSheet from '../components/CheatSheet/CheatSheet';
 function PorPara() {
   return (
     <CheatSheet title='Por and Para'>
-      <p>Soon™️</p>
+      <p>Coming soon.</p>
     </CheatSheet>
   );
 }
