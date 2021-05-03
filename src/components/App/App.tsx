@@ -15,6 +15,7 @@ import SaberConocer from '../../cheatsheets/SaberConocer';
 import PorPara from '../../cheatsheets/PorPara';
 import DirectObjectPronouns from '../../cheatsheets/DirectObjectPronouns';
 import IndirectObjectPronouns from '../../cheatsheets/IndirectObjectPronouns';
+import DoubleObjectPronouns from '../../cheatsheets/DoubleObjectPronouns';
 
 const cheatSheets = [
   ConjugationPresent,
@@ -29,7 +30,8 @@ const cheatSheets = [
   SaberConocer,
   PorPara,
   DirectObjectPronouns,
-  IndirectObjectPronouns
+  IndirectObjectPronouns,
+  DoubleObjectPronouns
 ];
 
 function App() {
