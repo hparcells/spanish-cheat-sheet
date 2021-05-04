@@ -16,6 +16,7 @@ import PorPara from '../../cheatsheets/PorPara';
 import DirectObjectPronouns from '../../cheatsheets/DirectObjectPronouns';
 import IndirectObjectPronouns from '../../cheatsheets/IndirectObjectPronouns';
 import DoubleObjectPronouns from '../../cheatsheets/DoubleObjectPronouns';
+import CommandsTu from '../../cheatsheets/CommandsTuAffirmative';
 
 const cheatSheets = [
   ConjugationPresent,
@@ -31,7 +32,8 @@ const cheatSheets = [
   PorPara,
   DirectObjectPronouns,
   IndirectObjectPronouns,
-  DoubleObjectPronouns
+  DoubleObjectPronouns,
+  CommandsTu
 ];
 
 function App() {
