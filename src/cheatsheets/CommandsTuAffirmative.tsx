@@ -2,7 +2,7 @@ import React from 'react';
 
 import CheatSheet from '../components/CheatSheet/CheatSheet';
 
-function CommandsTu() {
+function CommandsTuAffirmative() {
   return (
     <CheatSheet title='Tú Commands: Affirmative'>
       <p>
@@ -51,4 +51,4 @@ function CommandsTu() {
   );
 }
 
-export default CommandsTu;
+export default CommandsTuAffirmative;
